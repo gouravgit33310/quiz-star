@@ -1,0 +1,11 @@
+quizform:
+  version: 1.x
+  css:
+    theme:
+      css/quiz.css: {}
+      # https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css: {type: external}
+  js:
+    js/timer.js: {}
+  #   js/mycalc.js: {}
+  dependencies:
+    - core/jquery

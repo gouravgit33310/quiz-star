@@ -1,0 +1,14 @@
+quizers.admin:
+  title: 'Quizer dashboard'
+  description: 'example of how to make an admin settings page link'
+  parent: system.admin
+  route_name: quizers.addquizform
+  weight: 100
+
+quizers.menu_link:
+  title: 'Start quiz'
+  description: 'quizers'
+  parent: main
+  menu_name: main
+  route_name: quizers.quiz_start
+  weight: 10

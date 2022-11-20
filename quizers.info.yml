@@ -1,0 +1,4 @@
+name: quizers
+type: module
+description: 'Quizers module is used for creating mcqs questions. <br><br>Developed BY <b><a href="https://www.drupal.org/u/gourav33310">Gourav Chouhan</a></b>.'
+core_version_requirement: ^8 || ^9

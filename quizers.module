@@ -1,0 +1,15 @@
+<?php 
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\menu_link_content\Entity\MenuLinkContent;
+/**
+* Implements hook_form_alter().
+*/
+
+function quizers_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+   if ($form_id == 'quizmain_form' || $form_id == 'quiz_form' ) {
+    $form['#attached']['library'][] = 'quizers/quizform';
+   }
+    return $form;
+}
+

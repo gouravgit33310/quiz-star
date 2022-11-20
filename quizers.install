@@ -1,0 +1,114 @@
+<?php
+
+function quizers_schema(){
+    $schema['quiz_table'] = array(
+        'description' => 'The table for storing the subscriber data.',
+        'fields' => array(
+            'id' => array(
+                'description' => 'The primary identifier for subscriber.',
+                'type' => 'serial',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+                'AUTO_INCREMENT' => TRUE
+            ),
+            'quiz_name' => array(
+                'description' => 'Subscriber name.',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => False,
+                
+            ),
+            'question' => array(
+                'description' => 'Subscriber email.',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => False,
+                
+            ),
+            'ans0' => array(
+                'description' => 'Subscription date time(yyyy-mm-dd H:i:s).',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => False,
+            ),
+            'ans1' => array(
+                'description' => 'Subscriber status(1=Unblock,0=Block).',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => False,
+                
+            ),
+            'ans2' => array(
+                'description' => 'Subscriber status(1=Unblock,0=Block).',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => False,
+                
+            ),
+            'ans3' => array(
+                'description' => 'Subscriber status(1=Unblock,0=Block).',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => False,
+                
+            ),
+            'ans4' => array(
+                'description' => 'Subscriber status(1=Unblock,0=Block).',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => False,
+                
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+    $schema['quiz_type'] = array(
+        'description' => 'The table for storing the subscriber data.',
+        'fields' => array(
+            'id' => array(
+                'description' => 'The primary identifier for subscriber.',
+                'type' => 'serial',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+                'AUTO_INCREMENT' => TRUE
+            ),
+            'quiz_name' => array(
+                'description' => 'Subscriber name.',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => False,
+                
+            ),
+            'duration' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => False,
+                
+            ),
+            'question_count' => array(
+                'type' => 'int',
+                'length' => 10,
+                'not null' => False,
+            ),
+            'created' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => False,
+                
+            ),
+            'quiz_type' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => False,
+                
+            ),
+            'created_time' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => False,
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+    return $schema;
+}

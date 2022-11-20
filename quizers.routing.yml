@@ -1,0 +1,63 @@
+quizers.quiz_start:
+  path: '/start-quiz'
+  defaults:
+    _form: 'Drupal\quizers\Form\NonAdmin'
+    _title: 'Quizers'
+  requirements:
+    _permission: 'access content'
+
+quizers.addquizform:
+  path: '/add-quiz'
+  defaults:
+    _form: 'Drupal\quizers\Form\Addquiz'
+    _title: 'Quizers'
+  requirements:
+    _permission: 'access content'
+
+quizers.add_question:
+  path: '/form-quiz'
+  defaults:
+    _form: 'Drupal\quizers\Form\Quizform'
+    _title: 'Add Questions'
+  requirements:
+    _permission: 'access content'
+
+quizers.mainform:
+  path: '/form-quizmain'
+  defaults:
+    _form: 'Drupal\quizers\Form\Quizmainform'
+    _title: 'Simple custom form example'
+  requirements:
+    _permission: 'access content'
+
+quizers.resultpage:
+  path: '/form-result'
+  defaults:
+    _controller: 'Drupal\quizers\Controller\Resultpage::myPage'
+    _title: 'Results'
+  requirements:
+    _permission: 'access content'
+
+quizers.edit_form:
+  path: '/form-edit'
+  defaults:
+    _form: 'Drupal\quizers\Form\QuizEditform'
+    _title: 'Edit Questions'
+  requirements:
+    _permission: 'access content'
+
+quizers.show_quiz:
+  path: '/form-result'
+  defaults:
+    _controller: 'Drupal\quizers\Controller\Resultpage::myPage'
+    _title: 'Results'
+  requirements:
+    _permission: 'access content'
+
+quizers.delete_form:
+  path: '/mcq-delete'
+  defaults:
+    _controller: 'Drupal\quizers\Controller\Resultpage::mcqDelete'
+    _title: 'Results'
+  requirements:
+    _permission: 'access content'

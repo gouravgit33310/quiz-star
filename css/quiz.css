@@ -1,0 +1,24 @@
+.fieldset-wrapper .form-radios .js-form-type-radio{
+    display: flex;
+}
+.fieldset-wrapper .form-radios .js-form-type-radio label{
+    margin-top:10px;
+} 
+.fieldset-legend {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fieldset-legend p{
+    margin-left: 10px;
+}
+a.markup-button {
+    margin-left: 10px;
+}
+.countdown {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.right-ans-text {
+ border: 5px solid green;
+ border-radius: 10px;
+ color:olivedrab;
+}
